@@ -1,0 +1,37 @@
+*{
+    font-family: cursive;
+    font-weight: bold;
+}
+
+.app{
+    width: 300px;
+    height: 200px;
+    margin: 5px auto;
+    text-align: center;
+}
+
+.app .score{
+    width: 80%;
+    height: 30px;
+    margin: auto -2px 5px -2px;
+}
+
+.app .minus{
+    width: 30px;
+    height: 30px;
+    margin: auto 0px 5px 0px;
+}
+
+.player{
+    background-color: #0569BE;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.player p{
+    background-color: #555;
+    border: 3px solid #333;
+    color: #eee;
+    margin: -4px -4px 30px -4px;
+    padding: 10px;
+}
