@@ -3,29 +3,41 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="scoreboard2.png">
         <link rel="stylesheet" href="style.css">
         <title>Marca Pontos</title>
     </head>
     <body>
         <div class="app">
             <div class="mesa">
-                <!-- <div class="player">
-                    <p>Felipe</p>
-                    <button class="minus">&minus;</button>
+                <div class="player">
+                    <input type="text" placeholder="nome do jogador">
+                    <div class="minus fa fa-minus"></div>
+                    <!-- <button class="minus">&minus;</button> -->
                     <button class="score">0</button>
+                    <div class="trash fa fa-trash-o"></div>
                 </div>
 
                 <div class="player" style="background-color: #C71C24;">
-                    <p>Pereira</p>
-                    <button class="minus">&minus;</button>
-                    <button class="score">0</button>
-                </div>-->
+                    <input type="text" placeholder="nome do jogador">
+                    <div class="minus fa fa-minus"></div>
+                    <!-- <button class="minus">&minus;</button> -->
+                    <button class="score" style="background-color: #C71C24;">0</button>
+                    <div class="trash fa fa-trash-o"></div>
+                </div>
             </div>
 
             <div class="novoJogador">
-                <input type="text" placeholder="Nome do jogador" class="nomeJogador">
+                <!-- <input type="text" placeholder="Nome do jogador" class="nomeJogador" style="display: none;"> -->
                 <button class="addJogador">Adicionar jogador</button>
+                <button class="reset">Resetar</button>
+                <button class="log">Log</button>
             </div>
+        
+            <!-- <div class="credit">Icons made by <a href="https://www.flaticon.com/authors/good-ware" title="Good Ware">Good Ware</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+
+            <div class="credit">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
 
         <script src="app.js"></script>
