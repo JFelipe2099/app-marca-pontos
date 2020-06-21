@@ -1,5 +1,8 @@
+/* fontes */
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@500&display=swap');
+
 *{
-    font-family: cursive;
+    font-family: 'MuseoModerno', Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
 
