@@ -103,7 +103,7 @@
 }
 
 .reset{
-    background-color: #555555;
+    background-color: rgb(85, 85, 85);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -118,7 +118,7 @@
 }
 
 .log{
-    background-color: seagreen;
+    background-color: rgb(46, 139, 87);
     border: none;
     color: white;
     padding: 15px 32px;
@@ -126,11 +126,23 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 0;
     cursor: pointer;
 
     width: 100%;
-    display: none;
+    display: block;
+}
+
+.log:hover{
+    background-color: rgba(38, 116, 72, 0.9);
+}
+
+.reset:hover{
+    background-color: rgba(58, 58, 58, 0.9);
+}
+
+.addJogador:hover{
+    background-color: rgba(184, 7, 95, 0.9);
 }
 
 .credit{

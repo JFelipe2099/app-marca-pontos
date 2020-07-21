@@ -4,11 +4,29 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="popup-style.css">
         <link rel="icon" href="scoreboard2.png">
         <link rel="stylesheet" href="style.css">
         <title>Marca Pontos</title>
     </head>
     <body>
+        <div class="popup-wrapper">
+            <!-- o popup em si -->
+            <div class="popup">
+                <!-- x para fechar o popup -->
+                <div class="popup-close">x</div>
+                <!-- conteúdo -->
+                <div class="popup-content">
+                    <h2>Título do Log</h2>
+
+                    <form>
+                        <input type="text" name="logName" placeholder="ex: mesa 1">
+                        <button type="submit" class="popup-button">Salvar Log</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <div class="app">
             <div class="mesa">
                 <div class="player">
@@ -30,11 +48,14 @@
                 <button class="addJogador">Adicionar jogador</button>
                 <button class="reset">Resetar</button>
                 <button class="log">Log</button>
+                <button class="log display" style="background-color: crimson;">Mostrar Log</button>
             </div>
 
             <div class="credit">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
 
         <script src="app.js"></script>
+        <script src="popup.js"></script>
+        <script src="log.js"></script>
     </body>
 </html>
