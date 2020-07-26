@@ -1,14 +1,14 @@
 const btn = document.querySelector('.log');
 const popup = document.querySelectorAll('.popup-wrapper');
-const x = document.querySelector('.popup-close');
+const x = document.querySelectorAll('.popup-close');
 
 btn.addEventListener('click', () => {
     popup[0].style.display = 'block';
 });
 
-x.addEventListener('click', () => {
-    popup[0].style.display = 'none';
-});
+x.forEach(x => x.addEventListener('click', e => {
+    e.target.parentElement.parentElement.style.display = 'none';
+}));
 
 const closePopup = (x=0) => {
     popup[x].style.display = 'none';

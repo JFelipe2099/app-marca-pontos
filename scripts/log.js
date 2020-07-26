@@ -17,11 +17,8 @@ logForm.addEventListener('submit', e => {
     logData = [];
     logForm.reset();
 
-    popupContent.innerHTML = `
-        <h2>Log realizado com sucesso!</h2>
-
-        <button class="popup-button" onclick="closePopup()">Fechar</button>
-    `;
+    popup[0].style.display = 'none';
+    popup[1].style.display = 'block';
 });
 
 logButton.addEventListener('click', () => {
@@ -49,6 +46,6 @@ logButton.addEventListener('click', () => {
         displayLog.innerHTML += '<hr>';
     }
 
-    displayLog.innerHTML += '<button class="popup-button" onclick="closePopup(1)">Fechar</button>';
+    displayLog.innerHTML += '<button class="popup-button" onclick="closePopup(2)">Fechar</button>';
     logContainer.style.display = 'block';
 });
