@@ -4,25 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="popup-style.css">
         <link rel="icon" href="scoreboard2.png">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="styles/popup-style.css">
+        <link rel="stylesheet" href="styles/style.css">
         <title>Marca Pontos</title>
     </head>
     <body>
         <div class="popup-wrapper">
-            <!-- o popup em si -->
             <div class="popup">
-                <!-- x para fechar o popup -->
                 <div class="popup-close">x</div>
-                <!-- conteúdo -->
-                <div class="popup-content">
-                    <h2>Título do Log</h2>
+                    <div class="popup-content">
+                        <h2>Título do Log</h2>
 
-                    <form>
-                        <input type="text" name="logName" placeholder="ex: mesa 1">
-                        <button type="submit" class="popup-button">Salvar Log</button>
-                    </form>
+                        <form>
+                            <input type="text" name="logName" placeholder="ex: mesa 1">
+                            <button type="submit" class="popup-button">Salvar Log</button>
+                        </form>
+                    </div>
+            </div>
+        </div>
+
+        <div class="popup-wrapper log-container">
+            <div class="popup log-wrapper">
+                <div class="log-content">
+                    
                 </div>
             </div>
         </div>
@@ -54,8 +59,8 @@
             <div class="credit">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
         </div>
 
-        <script src="app.js"></script>
-        <script src="popup.js"></script>
-        <script src="log.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/popup.js"></script>
+        <script src="scripts/log.js"></script>
     </body>
 </html>
