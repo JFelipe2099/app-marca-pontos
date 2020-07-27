@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Log de Jogos</title>
+        <style>
+            * {
+                text-align: left;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="app">
+            <div class="mesa">
+
+            </div>
+        </div>
+        
+        <script>
+            const mesa = document.querySelector('.mesa');
+
+            for (let i = 0; i < localStorage.length; i++){
+                let tempData = JSON.parse(localStorage.getItem(localStorage.key(i)));
+
+                tempData.sort((a, b) => {
+                    if (a.pontos > b.pontos){
+                        return -1;
+                    } else if (b.pontos > a.pontos){
+                        return 1;
+                    } else{
+                        return 0;
+                    }
+                });
+            
+                mesa.innerHTML += `<h1>${localStorage.key(i)}</h1>`;
+                tempData.forEach(result => {
+                    mesa.innerHTML += `
+                        <h5>${result.nome} - ${result.pontos} pontos</h5>
+                    `;
+                })
+            }
+        </script>
+    </body>
+</html>
