@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" href="scoreboard2.png">
         <link rel="stylesheet" href="styles/popup-style.css">
+        <link rel="stylesheet" href="styles/menu.css">
         <link rel="stylesheet" href="styles/style.css">
         <title>Marca Pontos</title>
     </head>
@@ -45,6 +46,15 @@
         </div>
 
         <div class="app">
+            <button class="menubtn" onclick="openMenu()">☰</button>
+
+            <div class="menu">
+                <a href="javascrit:void(0)" onclick="closeMenu()" class="closeMenu">x</a>
+                <a href="javascrit:void(0)" class="reset">Resetar</a>
+                <a href="javascrit:void(0)" class="log">Salvar ao Log</a>
+                <a href="javascrit:void(0)" class="log display">Mostrar Log</a>
+            </div>
+
             <div class="mesa">
                 <div class="player">
                     <input type="text" placeholder="nome do jogador">
@@ -63,9 +73,9 @@
 
             <div class="novoJogador">
                 <button class="addJogador">Adicionar jogador</button>
-                <button class="reset">Resetar</button>
+                <!-- <button class="reset">Resetar</button>
                 <button class="log">Log</button>
-                <button class="log display" style="background-color: crimson;">Mostrar Log</button>
+                <button class="log display" style="background-color: crimson;">Mostrar Log</button> -->
             </div>
 
             <div class="credit">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>

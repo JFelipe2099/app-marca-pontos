@@ -55,7 +55,7 @@ novoJogador.addEventListener('click', event => {
 
         // CONTROLE DAS CORES
         colorSelector++;
-        if (colorSelector > 5){
+        if (colorSelector === 5){
             colorSelector = 0;
         }
     }
@@ -67,4 +67,14 @@ reset.addEventListener('click', () => {
     const scores = document.querySelectorAll('.score');
 
     scores.forEach(score => score.innerText = 0);
+    document.querySelector('.menu').style.width = '0';
 });
+
+// CONTROLES DO MENU
+const openMenu = () => {
+    document.querySelector('.menu').style.width = '250px';
+};
+
+const closeMenu = () => {
+    document.querySelector('.menu').style.width = '0';
+};

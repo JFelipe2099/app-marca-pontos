@@ -47,5 +47,6 @@ logButton.addEventListener('click', () => {
     }
 
     displayLog.innerHTML += '<button class="popup-button" onclick="closePopup(2)">Fechar</button>';
+    document.querySelector('.menu').style.width = '0';
     logContainer.style.display = 'block';
 });
