@@ -81,6 +81,10 @@
     border-radius: 10px;
 }
 
+.player input[type=text]:focus{
+    outline: none;
+}
+
 ::placeholder{
     color: #bbb;
 }
