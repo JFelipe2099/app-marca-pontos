@@ -12,6 +12,7 @@ logForm.addEventListener('submit', e => {
     players.forEach(pl => {
         logData.push({nome: pl.children[0].value, pontos: pl.children[2].textContent});
     });
+    logData[0].date = new Date();
 
     localStorage.setItem(logForm.logName.value, JSON.stringify(logData));
     logData = [];
