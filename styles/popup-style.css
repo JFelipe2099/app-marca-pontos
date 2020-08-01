@@ -78,3 +78,33 @@
 
     display: none;
 }
+
+.log-content{
+    text-align: left;
+}
+
+.log-content h2{
+    text-align: center;
+}
+
+.log-content ul{
+    list-style: none;
+}
+
+.log-content ul li::before {
+    content: '❌  ';
+    margin-left: -1em; 
+}
+
+.log-content ul li:first-child::before {
+    content: '👑  ';
+}
+
+.log-content h2::before, .log-content h2::after{
+    content: ' ⚔️ ';
+    font-size: 20px;
+}
+
+.save-log h2::after{
+    content: ' 💾';
+}

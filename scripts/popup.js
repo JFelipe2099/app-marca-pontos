@@ -7,14 +7,12 @@ btn.addEventListener('click', () => {
     popup[0].style.display = 'block';
 });
 
+// EVENTO PARA FECHAR POPUP
 x.forEach(x => x.addEventListener('click', e => {
     e.target.parentElement.parentElement.style.display = 'none';
 }));
 
+// FUNÇÃO PARA FECHAR POPUP
 const closePopup = (x=0) => {
     popup[x].style.display = 'none';
 }
-
-// popup.addEventListener('click', () => {
-//     popup.style.display = 'none';
-// });
